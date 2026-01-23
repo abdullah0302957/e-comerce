@@ -1,0 +1,126 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+/* Background container */
+.bg-container {
+  background-color: #0f2027;
+}
+
+/* Page wrapper */
+.page-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: pageSlide 0.9s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+
+/* Login page background */
+.login-page {
+  background: radial-gradient(circle at top right, #1e3c72, #0f2027);
+}
+
+/* Signup page background (if needed) */
+.signup-page {
+  background: radial-gradient(circle at top left, #1e3c72, #0f2027);
+}
+
+/* Card container */
+.card-container {
+  width: 360px;
+  padding: 38px;
+  background: linear-gradient(
+    145deg,
+    rgba(77, 9, 9, 0.18),
+    rgba(255, 255, 255, 0.05)
+  );
+  backdrop-filter: blur(18px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.55);
+  text-align: center;
+  animation: cardPop 0.7s ease;
+}
+
+/* Headings */
+h1 {
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+/* Inputs */
+.input {
+  width: 100%;
+  margin-bottom: 14px;
+  padding: 13px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff;
+  outline: none;
+}
+
+.input::placeholder {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+/* Login button */
+.btn-login {
+  width: 100%;
+  padding: 13px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #00f260, #0575e6);
+  color: #fff;
+  cursor: pointer;
+  margin-top: 12px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  box-shadow: 0 10px 30px rgba(0, 242, 96, 0.4);
+  transition: all 0.2s ease;
+}
+
+.btn-login:hover {
+  transform: scale(1.03) translateY(-2px);
+  box-shadow: 0 15px 40px rgba(0, 242, 96, 0.6);
+}
+
+/* Signup link */
+.signup-link {
+  margin-top: 18px;
+  cursor: pointer;
+  color: #fff;
+  opacity: 0.85;
+}
+
+.signup-link:hover {
+  text-decoration: underline;
+}
+
+/* Animations */
+@keyframes pageSlide {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes cardPop {
+  from {
+    transform: scale(0.85);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}

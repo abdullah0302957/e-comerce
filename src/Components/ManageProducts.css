@@ -1,0 +1,157 @@
+.manage {
+  padding: 30px;
+  font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+.heading{
+      margin-top: 18px;
+    margin-bottom: 27px;
+}
+
+.form {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 300px;
+}
+
+.form input,
+.form select {
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #999;
+  border-radius: 4px;
+  background: black;
+  color: white;
+}
+
+.form button {
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+
+
+.list {
+  margin-top: 30px;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 30px 1fr 60px auto;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+  background: #f9f9f9;
+  padding: 10px 14px;
+  border-radius: 8px;
+}
+
+.row input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+.row span {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-weight: 500;
+}
+
+.row img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.row div {
+  display: flex;
+  gap: 10px;
+}
+
+
+/* CSS */
+.animated-btn {
+  background: linear-gradient(90deg, #4facfe, #00f2fe);
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  position: relative;
+  overflow: hidden;
+}
+
+.animated-btn::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(255, 255, 255, 0.3);
+  transition: width 0.4s ease;
+  z-index: 1;
+}
+
+.animated-btn:hover::after {
+  width: 100%;
+}
+
+.animated-btn:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* CSS */
+.save-btn {
+  background-color: #28a745; /* Green color for save */
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  position: relative;
+}
+
+.save-btn:hover {
+  background-color: #218838; /* Darker green on hover */
+  transform: scale(1.1); /* Slight pop effect */
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+.save-btn:active {
+  transform: scale(0.95); /* Button press effect */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* Optional shine effect */
+.save-btn::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(255,255,255,0.2);
+  transition: width 0.4s ease;
+  z-index: 1;
+  border-radius: 8px;
+}
+
+.save-btn:hover::after {
+  width: 100%;
+}

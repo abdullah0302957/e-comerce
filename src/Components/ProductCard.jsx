@@ -1,0 +1,22 @@
+import "./ProductCard.css";
+
+export default function ProductCard({ product }) {
+  return (
+ 
+    <div className="card">
+      {product.reviews && <div className="reviews">{product.reviews}</div>}
+      <div className="image-container">
+        <img src={product.image} alt={product.name} />
+      </div>
+
+      <h4>{product.name}</h4>
+      <p className="price">Rs <span className="price-value">{product.price}</span></p>
+
+      <div className="badges">
+        {product.discount && <span className="discount">{product.discount}% OFF</span>}
+        <span className="fast-delivery">Fast Delivery</span>
+      </div>
+    </div>
+    
+  );
+}

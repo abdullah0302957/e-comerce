@@ -1,0 +1,263 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #4da9ff;
+  padding: 12px 20px;
+  color: white;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.menu-btn {
+  background: none;
+  border: none;
+  font-size: 22px;
+  color: white;
+  cursor: pointer;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight:bold;
+  color: white;
+  text-decoration: none;
+}
+
+.nav-center {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-center input {
+  width: 100%;
+  max-width: 520px;
+  padding: 12px 30px;  
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  color: grey;
+
+}
+
+
+.nav-right {
+  display: flex;
+  gap: 10px;
+}
+
+.login {
+  background: white;
+  color: #4da9ff;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.register {
+  background: transparent;
+  color: white;
+  border: 1px solid white;
+  padding: 8px 14px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.login:hover{
+    background-color: #4da9ff;
+    color: white;
+    border: 1px solid white;
+}
+
+.register:hover{
+    background-color: white;
+    color: #4da9ff;
+}
+
+.mobile-search-icon {
+  display: none;
+  font-size: 20px;
+  cursor: pointer;
+  margin-left: 8px;
+}
+
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.4);
+  z-index: 9;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -320px;
+  width: 300px;
+  height: 100vh;
+  background: #fff;
+  z-index: 1000;
+  overflow-y: auto;
+  transition: left 0.3s ease;
+  padding: 15px;
+}
+
+.sidebar.open {
+    position: fixed;
+    padding: 0;
+    margin: 0;
+    border-top-right-radius: 7%;
+    border-bottom-right-radius: 7%;
+    left: 0;
+}
+
+.Header {
+    background-color:#4da9ff;
+    padding: 20px 25px;
+}
+
+.sidebar-header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.close-btn {
+    width: 20px;
+    height: 20px; 
+    border-radius: 50%; 
+    border: 2px solid white;  
+    background: transparent; 
+    color: white;  
+    font-size: 10px; 
+    cursor: pointer; 
+    align-items: center; 
+    margin-right: 5px;
+}
+
+/* Logo link */
+.sidebar-logo {
+  display: block;
+  font-size: 22px;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease;
+}
+
+.sidebar-logo:hover {
+  transform: translateX(10px);
+}
+
+/* Sidebar links */
+.sidebar-link {
+  display: block;
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 8px 0;
+  transition: transform 0.3s ease;
+}
+
+.sidebar-link:hover {
+  transform: translateX(10px);
+}
+
+/* Sidebar login button */
+.sidebar-login {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid white;
+  background: #fff;
+  color: #4da9ff;
+  border-radius: 20px;
+  margin-top: 25px;   /* thoda niche */
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.sidebar-login:hover {
+  background: #4da9ff;
+  color: white;
+  transform: translateX(5px);
+}
+
+.sidebar-categories {
+  padding: 15px;
+}
+
+.category-item {
+  margin-bottom: 10px;
+}
+
+.category-toggle {
+  background: none;
+  border: none;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  color: #4da9ff;
+  width: 100%;
+  text-align: left;
+}
+
+.subcategory-list {
+  padding-left: 15px;
+  margin-top: 5px;
+}
+
+.subcategory-item {
+  font-size: 14px;
+  padding: 4px 0;
+  color: gray;
+  cursor: pointer;
+}
+
+.subcategory-item:hover {
+  color: #4da9ff;
+}
+
+@media (max-width: 768px) {
+
+  .nav-right {
+    display: none;
+  }
+
+  /* hide search bar on mobile */
+  .nav-center {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background: #4da9ff;
+    padding: 10px;
+  }
+
+  /* show on click */
+  .nav-center.show-search {
+    display: block;
+  }
+
+  .nav-center input {
+    width: 100%;
+  }
+
+  /* show search icon */
+  .mobile-search-icon {
+    width: 100%;
+    max-width: 25px;
+    margin-left: 20px;
+    display: inline;
+    color: white;
+  }
+}
