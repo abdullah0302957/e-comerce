@@ -86,6 +86,27 @@
   right: 5px;
 }
 
+@media(max-width: 600px) {
+  .category-card {
+    width: 80px;
+    padding: 8px 0;
+  }
+
+  .category-card img {
+    width: 30px;
+    height: 25px;
+  }
+
+  .category-card p {
+    font-size: 11px;
+  }
+
+  .categories-container {
+    gap: 6px;
+  }
+}
+
+
 @media(max-width: 900px) {
   .categories-container {
     flex-wrap: nowrap; 

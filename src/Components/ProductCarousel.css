@@ -87,3 +87,90 @@
   border-radius: 20px;
   box-shadow: 0 8px 20px rgba(0,0,0,0.15);
 }
+@media (max-width: 1024px) {
+  .grid-inner {
+    grid-auto-columns: 250px;
+    gap: 15px;
+    margin: 30px 15px;
+  }
+
+  .grid-inner > * {
+    width: 250px;
+  }
+
+  .single-banner img {
+    height: auto;
+    max-height: 220px;
+  }
+
+  .btn-best {
+    font-size: 15px;
+    padding: 11px 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .grid-inner {
+    grid-auto-columns: 200px;
+    gap: 12px;
+    margin: 20px 10px;
+  }
+
+  .grid-inner > * {
+    width: 200px;
+  }
+
+  .single-banner img {
+    height: auto;
+    max-height: 180px;
+  }
+
+  .btn-best {
+    font-size: 14px;
+    padding: 10px 22px;
+  }
+}
+
+@media (max-width: 480px) {
+  .grid-inner {
+    grid-auto-columns: 160px;
+    gap: 10px;
+    margin: 15px 5px;
+  }
+
+  .grid-inner > * {
+    width: 160px;
+  }
+
+  .single-banner img {
+    height: auto;
+    max-height: 150px;
+  }
+
+  .btn-best {
+    font-size: 13px;
+    padding: 8px 18px;
+  }
+}
+
+@media (max-width: 320px) {
+  .grid-inner {
+    grid-auto-columns: 140px;
+    gap: 8px;
+    margin: 10px 5px;
+  }
+
+  .grid-inner > * {
+    width: 140px;
+  }
+
+  .single-banner img {
+    height: auto;
+    max-height: 130px;
+  }
+
+  .btn-best {
+    font-size: 12px;
+    padding: 6px 14px;
+  }
+}
