@@ -20,8 +20,6 @@ export default function Navbar() {
     } else {
       document.body.style.overflow = "auto";
     }
-
-    // cleanup (important)
     return () => {
       document.body.style.overflow = "auto";
     };
@@ -29,7 +27,7 @@ export default function Navbar() {
 
   return (
     <>
-      {/* Top Navbar */}
+   
       <nav className="navbar">
         <div className="nav-left">
           <button className="menu-btn" onClick={() => setMenuOpen(true)}>
@@ -61,12 +59,11 @@ export default function Navbar() {
         </div>
       </nav>
 
-      {/* Overlay */}
+     
       {menuOpen && (
         <div className="overlay" onClick={() => setMenuOpen(false)} />
       )}
 
-      {/* Side Drawer */}
       <aside className={`sidebar ${menuOpen ? "open" : ""}`}>
         <div className="Header">
           <div className="sidebar-header">
@@ -75,12 +72,10 @@ export default function Navbar() {
             </button>
           </div>
 
-          {/* Logo as link */}
           <a href="/" className="sidebar-logo">
             OZ-Tech
           </a>
 
-          {/* Links */}
           <a href="/track-order" className="sidebar-link">
             📍 Track my Order
           </a>
@@ -88,8 +83,7 @@ export default function Navbar() {
             📝 Launch a Complaint
           </a>
 
-          {/* Login button */}
-          <button className="sidebar-login" onClick={() => navigate("/manage-products")} >Login</button>
+          <button className="sidebar-login" onClick={() => navigate("/manage-products")} >Admin Panel</button>
         </div>
         <div className="sidebar-categories">
           {categories.map((cat, index) => (

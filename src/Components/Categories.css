@@ -7,7 +7,7 @@
 .categories-wrapper {
   position: relative;
   width: 100%;
-  overflow: hidden; /* hide scroll bar initially */
+  overflow: hidden;
 }
 
 .categories-container {

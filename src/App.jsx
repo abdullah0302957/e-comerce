@@ -13,14 +13,14 @@ function App() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 500); // 2 sec loader
+    }, 500); 
     return () => clearTimeout(timer);
   }, []);
 
   return (
     <>
         {loading ? (
-        <Loader /> // 🔹 Loader dikhaye
+        <Loader /> 
       ) : (
       
     

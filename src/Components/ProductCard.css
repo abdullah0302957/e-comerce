@@ -55,7 +55,7 @@ h4 {
   margin: 8px 0 4px 0;
   font-weight: 600;
   color: #111;
-  height: 40px; /* fix multi-line text height */
+  height: 40px; 
   overflow: hidden;
   text-overflow: ellipsis;
 }
@@ -63,7 +63,6 @@ h4 {
 .price {
   font-weight: bold;
   margin: 4px 0;
-  /* bright attention color */
   font-size: 16px;
 }
 .price-value {

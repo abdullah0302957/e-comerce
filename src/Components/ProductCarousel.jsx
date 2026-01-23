@@ -13,7 +13,6 @@ const categoriesList = [
   "Tablets",
 ];
 
-// 🔹 Category gradients only
 const categoryColors = {
   "Mobiles": "linear-gradient(160deg, #3a57c6, #b5c4e0)",            
   "Wireless Earbuds": "linear-gradient(160deg, #2b5cb7, #799ded)",  
@@ -28,12 +27,11 @@ const categoryColors = {
 export default function ProductCarousel() {
   const allProducts = JSON.parse(localStorage.getItem("products")) || [];
 
-  // 🔥 BEST SELLER PRODUCTS
   const bestSellers = allProducts.filter((p) => p.isBestSeller);
 
   return (
     <div>
-      {/* 🔥 BEST SELLER SECTION */}
+ 
       {bestSellers.length > 0 && (
         <div className="carousel" style={{ backgroundColor: "#f5f5f5" }}>
           <div className="h1">
@@ -50,12 +48,10 @@ export default function ProductCarousel() {
         </div>
       )}
 
-      {/* 🟡 SINGLE BANNER */}
       <div className="single-banner">
         <img src="img2.webp" alt="Promotion Banner" />
       </div>
 
-      {/* 🔹 CATEGORY WISE PRODUCTS */}
       {categoriesList.map((cat) => {
         const categoryProducts = allProducts.filter(
           (p) => p.category === cat && !p.isBestSeller
@@ -68,7 +64,7 @@ export default function ProductCarousel() {
             key={cat}
             category={cat}
             products={categoryProducts}
-            bgColor={categoryColors[cat]} // ✅ gradient applied
+            bgColor={categoryColors[cat]}
           />
         );
       })}

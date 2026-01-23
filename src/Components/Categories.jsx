@@ -1,5 +1,5 @@
 import React from "react";
-import { categoriesList } from "../data/categories.js"; // import constants
+import { categoriesList } from "../data/categories.js";
 import "./Categories.css";
 
 export default function Categories() {

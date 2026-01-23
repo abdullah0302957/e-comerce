@@ -85,7 +85,7 @@ export default function ManageProducts() {
           discount,
           reviews,
           category,
-          isBestSeller: false, // ✅ default false
+          isBestSeller: false, 
         },
       ]);
     }
@@ -120,7 +120,6 @@ export default function ManageProducts() {
     saveProducts((prev) => prev.filter((p) => p.id !== id));
   };
 
-  // ✅ DIRECT TOGGLE FROM LIST
   const toggleBestSeller = (id) => {
     saveProducts((prev) =>
       prev.map((p) =>
@@ -214,7 +213,6 @@ export default function ManageProducts() {
         </div>
       )}
 
-      {/* 🔥 PRODUCT LIST WITH CHECKBOX */}
       <div className="list">
         {products.map((p) => (
           <div key={p.id} className="row">

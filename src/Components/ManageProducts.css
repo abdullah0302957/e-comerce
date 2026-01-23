@@ -74,8 +74,6 @@
   gap: 10px;
 }
 
-
-/* CSS */
 .animated-btn {
   background: linear-gradient(90deg, #4facfe, #00f2fe);
   color: white;
@@ -112,9 +110,8 @@
   box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
 }
 
-/* CSS */
 .save-btn {
-  background-color: #28a745; /* Green color for save */
+  background-color: #28a745; 
   color: white;
   font-size: 18px;
   font-weight: bold;
@@ -128,17 +125,16 @@
 }
 
 .save-btn:hover {
-  background-color: #218838; /* Darker green on hover */
-  transform: scale(1.1); /* Slight pop effect */
+  background-color: #218838; 
+  transform: scale(1.1); 
   box-shadow: 0 8px 20px rgba(0,0,0,0.3);
 }
 
 .save-btn:active {
-  transform: scale(0.95); /* Button press effect */
+  transform: scale(0.95);
   box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
 
-/* Optional shine effect */
 .save-btn::after {
   content: "";
   position: absolute;

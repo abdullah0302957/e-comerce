@@ -142,7 +142,6 @@
     margin-right: 5px;
 }
 
-/* Logo link */
 .sidebar-logo {
   display: block;
   font-size: 22px;
@@ -157,7 +156,6 @@
   transform: translateX(10px);
 }
 
-/* Sidebar links */
 .sidebar-link {
   display: block;
   color: white;
@@ -171,7 +169,6 @@
   transform: translateX(10px);
 }
 
-/* Sidebar login button */
 .sidebar-login {
   width: 100%;
   padding: 10px;
@@ -179,7 +176,7 @@
   background: #fff;
   color: #4da9ff;
   border-radius: 20px;
-  margin-top: 25px;   /* thoda niche */
+  margin-top: 25px;  
   font-weight: bold;
   cursor: pointer;
   transition: background 0.3s ease, transform 0.3s ease;
@@ -232,7 +229,6 @@
     display: none;
   }
 
-  /* hide search bar on mobile */
   .nav-center {
     display: none;
     position: absolute;
@@ -243,7 +239,6 @@
     padding: 10px;
   }
 
-  /* show on click */
   .nav-center.show-search {
     display: block;
   }
@@ -252,7 +247,7 @@
     width: 100%;
   }
 
-  /* show search icon */
+ 
   .mobile-search-icon {
     width: 100%;
     max-width: 25px;
