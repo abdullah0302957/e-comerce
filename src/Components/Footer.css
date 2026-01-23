@@ -1,4 +1,4 @@
-/* RESET EXTRA SPACE */
+
 .footer {
   margin: 0;
   padding: 0;
@@ -6,8 +6,6 @@
   color: #000;
   font-family: sans-serif;
 }
-
-/* ================= FEATURES ================= */
 .footer-features {
   margin-top: 30px;
   display: flex;
@@ -34,7 +32,6 @@
 
 }
 
-/* ================= COLUMNS ================= */
 .footer-columns {
   display: flex;
   flex-wrap: wrap;
@@ -65,7 +62,6 @@
   text-decoration: underline;
 }
 
-/* ================= PAYMENT ================= */
 .payment-icons img {
   width: 100%;
   max-width: 285px;
@@ -77,7 +73,6 @@
   max-width: 160px;
 }
 
-/* ================= BOTTOM ================= */
 .footer-bottom {
   display: flex;
   align-items: center;
@@ -88,14 +83,12 @@
   font-size: 14px;
 }
 
-/* copyright 10px right */
 .footer-bottom p {
   color: whitesmoke;
   margin: 0;
   transform: translateX(10px);
 }
 
-/* social icons center */
 .social-icons {
   display: flex;
   gap: 12px;
@@ -107,7 +100,6 @@
   cursor: pointer;
 }
 
-/* ================= MOBILE RESPONSIVE ================= */
 @media (max-width: 768px) {
 
   .footer-features {

@@ -26,7 +26,6 @@ function Signup() {
 
     alert("Signup successful ✅\nName: " + name + "\nEmail: " + email);
 
-    // Clear form after submit
     setName("");
     setEmail("");
     setPassword("");

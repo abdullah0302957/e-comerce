@@ -4,7 +4,7 @@ import "./Footer.css";
 export default function Footer() {
   return (
     <footer className="footer">
-      {/* Top Features */}
+    
       <div className="footer-features">
         <div className="feature-item"><img src="/src/assets/approved-feature.svg" alt="Time Out" />
         <div>PTA Approved </div>
@@ -24,7 +24,6 @@ export default function Footer() {
         </div>
       </div>
 
-      {/* Main Footer Columns */}
       <div className="footer-columns">
         <div className="footer-column">
           <h3>OZ-Tech.pk</h3>
@@ -54,7 +53,7 @@ export default function Footer() {
         </div>
       </div>
 
-      {/* Bottom Footer */}
+    
       <div className="footer-bottom">
         <p>©Copyright 2026 <br /> OZ-Tech.pk</p>
         <div className="social-icons">
