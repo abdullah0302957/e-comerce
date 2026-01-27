@@ -6,6 +6,8 @@ import Homepage from "./Components/Homepage";
 import "./App.css";
 import ManageProducts from "./Components/ManageProducts.jsx";
 import Loader from "./Components/Loader.jsx"
+import CategoryPage from "./Components/CategoryPage.jsx";
+import ProductDetails from "./Components/ProductDetails";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -30,6 +32,8 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
           <Route path="/manage-products" element={<ManageProducts />} />
+           <Route path="/category/:categoryName" element={<CategoryPage />} />
+           <Route path="/product/:id" element={<ProductDetails />} />
         </Routes>
       </Router>
         )}

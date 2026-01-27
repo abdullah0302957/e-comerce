@@ -174,3 +174,19 @@
     padding: 6px 14px;
   }
 }
+/* ✅ Category page normal product layout */
+.category-page {
+  padding: 30px;
+}
+
+.category-page h2 {
+  margin-bottom: 20px;
+}
+
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 25px;
+  max-width: 1200px;
+  margin: 0 auto; /* center */
+}

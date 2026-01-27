@@ -1,6 +1,7 @@
 import { useRef, useEffect, useState } from "react";
 import ProductCard from "./ProductCard";
 import "./ProductCarousel.css";
+import { useNavigate } from "react-router-dom";
 
 const categoriesList = [
   "Mobiles",
@@ -28,7 +29,6 @@ export default function ProductCarousel() {
   const allProducts = JSON.parse(localStorage.getItem("products")) || [];
 
   const bestSellers = allProducts.filter((p) => p.isBestSeller);
-
   return (
     <div>
  
@@ -90,12 +90,12 @@ function CategorySlider({ category, products, bgColor }) {
   const slideRight = () => {
     sliderRef.current.scrollLeft += 300;
   };
-
+    const navigate = useNavigate();
   return (
     <div className="carousel" style={{ background: bgColor }}>
       <div className="h1">
         <h2>{category}</h2>
-        <button className="btn-best">View All</button>
+        <button className="btn-best"     onClick={() => navigate(`/category/${category}`)}>View All</button>
       </div>
 
       {showArrows && (
