@@ -37,7 +37,7 @@ export default function Navbar() {
             OZ-Tech
           </a>
           <img
-            src="/src/assets/find_4835655.png"
+            src="/src/assets/find_4835655.jpeg"
             className="mobile-search-icon"
             onClick={() => setShowSearch(!showSearch)}
           />
