@@ -7,7 +7,6 @@ export default function ProductDetails() {
 
   const allProducts = JSON.parse(localStorage.getItem("products")) || [];
 
-  // 🔥 FIX: id ko Number me convert karo
   const product = allProducts.find((p) => String(p.id) === id);
 
   if (!product) {
