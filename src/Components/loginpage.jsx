@@ -10,7 +10,7 @@ function Login() {
   const [error, setError] = useState("");
 
   const handleLogin = () => {
-    const fixedEmail = "example@gmail.com";
+    const fixedEmail = "abdullah@gmail.com";
     const fixedPassword = "123456";
 
     if (email === fixedEmail && password === fixedPassword) {
